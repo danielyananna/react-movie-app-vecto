@@ -1,0 +1,32 @@
+.btn {
+    border: none;
+    border-radius: 80px;
+    color: $mainDark;
+    cursor: pointer;
+    height: 44px;
+    line-height: 22px;
+    padding: 0 24px;
+    text-align: center;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    font-family: 'Mardoto-medium', 'Helvetica', 'Arial', 'sans-serif';
+
+    &--blue {
+        background: transparent linear-gradient(128deg, #2727F5 0%, #001671 100%) 0 0 no-repeat padding-box;
+        border-radius: 40px;
+        color: $whiteHue;
+        opacity: 1;
+        padding: 0 80px;
+    }
+
+    &--gray {
+        background: #F1F1F1 0 0 no-repeat padding-box;
+        border-radius: 40px;
+        color: $mainDark;
+        opacity: 1;
+        padding: 0 80px;
+    }
+
+}

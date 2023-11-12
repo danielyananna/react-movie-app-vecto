@@ -1,0 +1,37 @@
+.content {
+  height: 100%;
+  overflow-y: scroll;
+  width: calc( 100% - 156px);
+
+  &__featured {
+    color: $whiteHue;
+    left: 60px;
+    text-align: start;
+    top: 124px;
+
+    &-category {
+      margin-bottom: 16px;
+    }
+
+    &-title,
+    &-desc {
+      margin-bottom: 20px;
+    }
+
+    &-date {
+      margin-bottom: 12px;
+    }
+
+    &-play {
+      margin-right: 20px;
+    }
+
+    &-more-info {
+
+    }
+
+  }
+
+
+
+}

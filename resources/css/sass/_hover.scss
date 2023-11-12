@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) and (hover: hover) {
+  .nav:hover {
+   width: 312px;
+  }
+
+  .nav:hover .nav__link-text {
+    display: block;
+  }
+
+  .nav:hover .nav__link.active {
+    background-color: $secondaryDark;
+    border-radius: 12px;
+    height: 52px;
+    margin: 10px 0 10px 0;
+    width: calc(100% + 40px);
+  }
+
+  .nav:hover .nav__link.active .nav__link-search,
+  .nav:hover .nav__link.active .nav__link-home,
+  .nav:hover .nav__link.active .nav__link-tv-shows,
+  .nav:hover .nav__link.active .nav__link-movies,
+  .nav:hover .nav__link.active .nav__link-watch-later,
+  .nav:hover .nav__link.active .nav__link-genres {
+    left: 26px;
+  }
+
+  .nav:hover .nav__link.active .nav__link-text {
+    margin-left: 90px;
+  }
+
+  .nav:hover .nav__menu-profile {
+    display: block;
+  }
+
+  .nav:hover .nav__menu-item--lng,
+  .nav:hover .nav__menu-item--help,
+  .nav:hover .nav__menu-item--exit {
+    display: block;
+  }
+
+  .nav:hover + .content {
+   opacity: 0.8;
+  }
+
+  .btn--blue:hover {
+    background: transparent linear-gradient(128deg, #001671 0%, #2727F5 100%) 0 0 no-repeat padding-box;
+  }
+
+  .btn--gray:hover {
+    background-color: $lightDark;
+  }
+
+}
+

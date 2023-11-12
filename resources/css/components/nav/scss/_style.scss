@@ -1,0 +1,126 @@
+.nav {
+  background-color: $mainDark;
+  height: 100%;
+  padding: 40px;
+  width: 78px;
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+
+  &__menu {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    &-item {
+      cursor: pointer;
+      list-style: none;
+
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin: 38px -14px;
+
+    &-search,
+    &-home,
+    &-tv-shows,
+    &-movies,
+    &-watch-later,
+    &-genres {
+      left: 40px;
+      background-repeat: no-repeat;
+    }
+
+    &-search {
+      background-image: url('./public/assets/icons/search.png');
+      height: 26px;
+      width: 30px;
+    }
+
+    &-home {
+      background-image: url('./public/assets/icons/home.png');
+      height: 30px;
+      width: 26px;
+    }
+
+    &-tv-shows {
+      background-image: url('./public/assets/icons/tv-shows.png');
+      height: 28px;
+      width: 28px;
+    }
+
+    &-movies {
+      background-image: url('./public/assets/icons/movies.png');
+      height: 26px;
+      width: 28px;
+    }
+
+    &-genres {
+      background-image: url('./public/assets/icons/genres.png');
+      height: 29px;
+      width: 29px;
+    }
+
+    &-watch-later {
+      background-image: url('./public/assets/icons/watch-later.png');
+      height: 26px;
+      width: 30px;
+    }
+
+    &-text {
+      @include font-size(30);
+      color: $whiteHue;
+      -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+      margin-left: 106px;
+      transition: width 3s;
+      width: 220px;
+    }
+
+    &-exit,
+    &-help,
+    &-lng {
+      margin-bottom: 24px;
+    }
+
+    &-exit &-text,
+    &-lng &-text,
+    &-help &-text {
+      margin-left: 30px;
+    }
+
+    &-lng {
+      padding-top: 66px;
+    }
+
+  }
+
+  &__profile {
+    cursor: none !important;
+
+    &-block {
+      margin-bottom: 30px;
+    }
+
+    &-img {
+      border-radius: 45px;
+      height: 80px;
+      margin-right: 14px;
+      width: 80px;
+      transition: width 3s;
+    }
+
+    &-text {
+      @include font-size(28);
+      color: $whiteHue;
+    }
+
+  }
+
+  &__container {
+    color: $whiteHue;
+  }
+
+
+}

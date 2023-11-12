@@ -1,0 +1,19 @@
+.nav__link.active {
+  background-color: rgba(59,72,109, 0.56);
+  border-radius: 41px;
+  height: 82px;
+  width: 82px;
+  margin: 6px 0;
+}
+
+.nav__link.active .nav__link-search,
+.nav__link.active .nav__link-home,
+.nav__link.active .nav__link-tv-shows,
+.nav__link.active .nav__link-movies,
+.nav__link.active .nav__link-genres {
+  left: 28px;
+}
+
+.nav__link.active .nav__link-watch-later {
+  left: 24px;
+}
